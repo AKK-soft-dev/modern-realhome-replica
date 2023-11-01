@@ -1,8 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+  }
+  body::-webkit-scrollbar {
+    width: 0px; /* Width of the scrollbar track */
+  }
+  body {
+    scrollbar-width: 0px;
+  }
   body {
     @apply bg-default;
   }

@@ -9,6 +9,8 @@ const settings = {
   infinite: true,
   fade: true,
   speed: 1000,
+  autoplaySpeed: 5000,
+  autoplay: true,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -16,7 +18,7 @@ const settings = {
 const Hero = () => {
   const sliderRef = useRef<Slider>(null);
   return (
-    <section className="mb-10 relative group overflow-x-hidden">
+    <section className="mb-10 group overflow-x-hidden -z-10">
       <Slider ref={sliderRef} {...settings}>
         {heroImgData.map((heroImg, i) => (
           <SliderItem key={i} heroImg={heroImg} />
@@ -34,8 +36,7 @@ const Hero = () => {
             fill="currentColor"
             viewBox="0 0 256 256"
           >
-            <path d="M112,56V200L40,128Z" opacity="0.2"></path>
-            <path d="M216,120H120V56a8,8,0,0,0-13.66-5.66l-72,72a8,8,0,0,0,0,11.32l72,72A8,8,0,0,0,120,200V136h96a8,8,0,0,0,0-16ZM104,180.69,51.31,128,104,75.31Z"></path>
+            <path d="M224,128a8,8,0,0,1-8,8H120v64a8,8,0,0,1-13.66,5.66l-72-72a8,8,0,0,1,0-11.32l72-72A8,8,0,0,1,120,56v64h96A8,8,0,0,1,224,128Z"></path>
           </svg>
         </button>
         <button
@@ -49,8 +50,7 @@ const Hero = () => {
             fill="currentColor"
             viewBox="0 0 256 256"
           >
-            <path d="M216,128l-72,72V56Z" opacity="0.2"></path>
-            <path d="M221.66,122.34l-72-72A8,8,0,0,0,136,56v64H40a8,8,0,0,0,0,16h96v64a8,8,0,0,0,13.66,5.66l72-72A8,8,0,0,0,221.66,122.34ZM152,180.69V75.31L204.69,128Z"></path>
+            <path d="M221.66,133.66l-72,72A8,8,0,0,1,136,200V136H40a8,8,0,0,1,0-16h96V56a8,8,0,0,1,13.66-5.66l72,72A8,8,0,0,1,221.66,133.66Z"></path>
           </svg>
         </button>
       </div>
