@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-default;
+  }
+}
+
+@layer utilities {
+  .btn {
+    padding: 15px 20px;
+  }
+}
+
+.section-shape {
+  clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
+}
