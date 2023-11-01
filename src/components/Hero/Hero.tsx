@@ -8,11 +8,12 @@ const settings = {
   arrows: false,
   infinite: true,
   fade: true,
-  speed: 1000,
+  speed: 2000,
   autoplaySpeed: 5000,
   autoplay: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  pauseOnHover: true,
 };
 
 const Hero = () => {
