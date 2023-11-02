@@ -1,13 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { menu } from "../../../lib/data";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
   const mainMenu = Object.keys(menu);
 
-  const toggleOpen = () => {
+  const toggleOpen = (e: React.MouseEvent) => {
+    e.stopPropagation();
     setOpen((prev) => !prev);
   };
+
+  // Click away listener
+  useEffect(() => {
+    const close = () => {
+      setOpen(false);
+    };
+    window.addEventListener("click", close);
+
+    return () => {
+      window.removeEventListener("click", close);
+    };
+  }, []);
 
   return (
     <div className="ml-auto sm:ml-0 xl:hidden block relative">
@@ -37,7 +50,7 @@ const Menu = () => {
           >
             <a
               href="#"
-              className="inline-block px-[25px] py-[15px] cursor-pointer capitalize"
+              className="block px-[25px] py-[15px] cursor-pointer capitalize"
             >
               {menuName}
             </a>
