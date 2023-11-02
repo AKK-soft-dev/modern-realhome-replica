@@ -24,6 +24,9 @@
   .btn {
     padding: 15px 20px;
   }
+  .container {
+    @apply px-2 sm:px-0;
+  }
 }
 
 .section-shape {
