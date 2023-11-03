@@ -192,36 +192,14 @@ const Search = () => {
               <div className="flex flex-1 flex-col sm:flex-row divide-x-0 sm:divide-x-2 divide-y-2 sm:divide-y-0">
                 <div className="flex-1 h-[90px] px-6 py-4 flex flex-col justify-between items-start">
                   <h6 className="font-medium text-sm">Min Area (sq ft)</h6>
-                  <button className="relative text-black/70 w-full pl-1 text-start flex justify-between items-center">
+                  <button className="relative text-black/70 w-full text-start flex justify-between items-center">
                     <span>Any</span>
-                    <span className="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="10"
-                        height="10"
-                        fill="currentColor"
-                        viewBox="0 0 256 256"
-                      >
-                        <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,48,88H208a8,8,0,0,1,5.66,13.66Z"></path>
-                      </svg>
-                    </span>
                   </button>
                 </div>
                 <div className="flex-1 h-[90px] px-6 py-4 flex flex-col justify-between items-start">
                   <h6 className="font-medium text-sm">Min Area (sq ft)</h6>
-                  <button className="relative text-black/70 w-full pl-1 text-start flex justify-between items-center">
+                  <button className="relative text-black/70 w-full text-start flex justify-between items-center">
                     <span>Any</span>
-                    <span className="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="10"
-                        height="10"
-                        fill="currentColor"
-                        viewBox="0 0 256 256"
-                      >
-                        <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,48,88H208a8,8,0,0,1,5.66,13.66Z"></path>
-                      </svg>
-                    </span>
                   </button>
                 </div>
               </div>
@@ -231,37 +209,15 @@ const Search = () => {
               {/** 1st column */}
               <div className="flex-1 h-[90px] px-6 py-4 flex flex-col justify-between items-start">
                 <h6 className="font-medium text-sm">Min Area (sq ft)</h6>
-                <button className="relative text-black/70 w-full pl-1 text-start flex justify-between items-center">
+                <button className="relative text-black/70 w-full text-start flex justify-between items-center">
                   <span>Any</span>
-                  <span className="">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="10"
-                      height="10"
-                      fill="currentColor"
-                      viewBox="0 0 256 256"
-                    >
-                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,48,88H208a8,8,0,0,1,5.66,13.66Z"></path>
-                    </svg>
-                  </span>
                 </button>
               </div>
               {/** 2nd column */}
               <div className="flex-1 h-[90px] px-6 py-4 flex flex-col justify-between items-start">
                 <h6 className="font-medium text-sm">Min Area (sq ft)</h6>
-                <button className="relative text-black/70 w-full pl-1 text-start flex justify-between items-center">
+                <button className="relative text-black/70 w-full text-start flex justify-between items-center">
                   <span>Any</span>
-                  <span className="">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="10"
-                      height="10"
-                      fill="currentColor"
-                      viewBox="0 0 256 256"
-                    >
-                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,48,88H208a8,8,0,0,1,5.66,13.66Z"></path>
-                    </svg>
-                  </span>
                 </button>
               </div>
             </div>

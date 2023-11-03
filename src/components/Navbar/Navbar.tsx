@@ -3,15 +3,15 @@ import Menu from "./Menu/Menu";
 
 const Navbar = () => {
   return (
-    <header className="absolute top-0 left-0 w-full bg-gradient-to-b py-4 from-black/60 z-50">
-      <nav className="custom-container flex flex-col md:flex-row items-center">
+    <header className="absolute top-0 left-0 w-full bg-gradient-to-b py-2 md:py-4 from-black/60 z-50">
+      <nav className="custom-container flex flex-col  md:flex-row items-center">
         <img src="/white-logo.png" alt="Logo" className="w-[119px] h-[62px]" />
         {/** For Desktop View */}
         <DesktopMenu />
 
         {/** Always visible menu */}
         {/** px are the sames as 'container' configured in index.css */}
-        <div className="w-full lg:w-auto  px-2 sm:px-0 md:ml-auto xl:ml-0 mt-4 md:mt-0 flex flex-col sm:flex-row items-stretch sm:items-center sm:justify-center md:justify-end text-default gap-4 md:gap-2">
+        <div className="w-full lg:w-auto  px-2 sm:px-0 md:ml-auto xl:ml-0 mt-4 md:mt-0 flex flex-col sm:flex-row items-stretch sm:items-center sm:justify-center md:justify-end text-default gap-3 md:gap-2">
           <div className="flex justify-center">
             <div className="flex items-center justify-center">
               <svg
@@ -41,7 +41,7 @@ const Navbar = () => {
                     <path d="M172,120a44,44,0,1,1-44-44A44.05,44.05,0,0,1,172,120Zm60,8A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88.09,88.09,0,0,0-91.47-87.93C77.43,41.89,39.87,81.12,40,128.25a87.65,87.65,0,0,0,22.24,58.16A79.71,79.71,0,0,1,84,165.1a4,4,0,0,1,4.83.32,59.83,59.83,0,0,0,78.28,0,4,4,0,0,1,4.83-.32,79.71,79.71,0,0,1,21.79,21.31A87.62,87.62,0,0,0,216,128Z"></path>
                   </svg>
                 </button>
-                <div className="absolute opacity-0 group-hover/authIcon:opacity-100 w-[270px] top-full right-1/2 pointer-events-none group-hover/authIcon:pointer-events-auto duration-300">
+                <div className="absolute hidden xl:block opacity-0 group-hover/authIcon:opacity-100 w-[270px] top-full right-1/2 pointer-events-none group-hover/authIcon:pointer-events-auto duration-300">
                   <div className="flex relative items-center gap-3 px-[17px] py-[25px] text-black/80 translate-y-8 group-hover/authIcon:translate-y-5 bg-white duration-300 hover:text-red-500 hover:underline">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
