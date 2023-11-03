@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import { CountryType, countries } from "../../lib/data";
+import { countries } from "../../lib/data";
 import clsx from "clsx";
+import { CountryType } from "./definitions";
 
 const CountrySelector = () => {
   const [selectedCountry, setSelectedCountry] = useState<CountryType>(
@@ -33,7 +34,10 @@ const CountrySelector = () => {
   }, []);
 
   return (
-    <div ref={dropdownRef} className="w-12 h-full bg-slate-200">
+    <div
+      ref={dropdownRef}
+      className="w-12 h-full flex items-stretch bg-slate-200"
+    >
       <button
         type="button"
         id="selectedDisplay"

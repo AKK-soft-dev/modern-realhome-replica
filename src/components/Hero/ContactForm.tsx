@@ -2,20 +2,20 @@ import CountrySelector from "./CountrySelector";
 
 const ContactForm = () => {
   return (
-    <div className="xl:w-[450px] group/contact xl:absolute xl:top-[30%] xl:right-24 min-h-[200px] p-7 bg-paper w-full">
+    <div className="xl:w-[450px] group/contact xl:absolute xl:top-[30%] xl:right-[7.5%] min-h-[200px] p-7 bg-paper w-full">
       <form>
         <h2 className="text-2xl font-bold">Let Us Call You!</h2>
         <p className="text-black/70 text-sm">
           To help you choose your property
         </p>
         <div className="flex flex-col gap-4 mt-3 w-full">
-          <div className="flex gap-4 w-full">
+          <div className="flex flex-col md:flex-row gap-4 w-full">
             <input
               type="text"
               className="flex-1 outline-none w-full px-[10px] py-2 border border-black/10 placeholder:text-black/50"
               placeholder="Your Name"
             />
-            <div className="flex-1 flex relative">
+            <div className="flex-1 flex items-stretch relative">
               <CountrySelector />
               <input
                 type="number"
