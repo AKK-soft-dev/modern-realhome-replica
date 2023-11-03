@@ -4,16 +4,16 @@ import Menu from "./Menu/Menu";
 const Navbar = () => {
   return (
     <header className="absolute top-0 left-0 w-full bg-gradient-to-b py-4 from-black/60 z-50">
-      <nav className="container flex flex-col md:flex-row items-center">
+      <nav className="custom-container flex flex-col md:flex-row items-center">
         <img src="/white-logo.png" alt="Logo" className="w-[119px] h-[62px]" />
         {/** For Desktop View */}
         <DesktopMenu />
 
         {/** Always visible menu */}
         {/** px are the sames as 'container' configured in index.css */}
-        <div className="px-2 sm:px-0 md:ml-auto xl:ml-0 mt-4 md:mt-0 flex flex-col sm:flex-row items-stretch sm:items-center sm:justify-center md:justify-end text-default gap-4 md:gap-2">
+        <div className="w-full lg:w-auto  px-2 sm:px-0 md:ml-auto xl:ml-0 mt-4 md:mt-0 flex flex-col sm:flex-row items-stretch sm:items-center sm:justify-center md:justify-end text-default gap-4 md:gap-2">
           <div className="flex justify-center">
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <svg
                 className="text-white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -24,10 +24,10 @@ const Navbar = () => {
               >
                 <path d="M231.88,175.08A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,231.88,175.08Z"></path>
               </svg>
-              <span>1-800-555-1234</span>
+              <span className="block">1-800-555-1234</span>
             </div>
           </div>
-          <div className="flex items-center gap-4 md:gap-2">
+          <div className="flex items-center justify-between sm:justify-start w-full sm:w-auto gap-4 md:gap-2">
             <div className="flex items-center gap-4 md:gap-2">
               <div className="relative group/authIcon">
                 <button className="flex items-center py-[13px] hover:text-white duration-300">
@@ -60,7 +60,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div>
-                <button className="inline-block px-[17px] py-[10px] bg-primary hover:bg-primary-dark duration-300 cursor-pointer capitalize">
+                <button className="inline-block px-2 py-1 md:px-[17px] md:py-[10px] font-medium  bg-transparent border-2 border-paper md:border-transparent md:bg-primary hover:bg-primary-dark duration-300 cursor-pointer capitalize">
                   Submit
                 </button>
               </div>

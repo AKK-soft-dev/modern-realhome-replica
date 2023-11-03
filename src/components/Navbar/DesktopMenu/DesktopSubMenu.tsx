@@ -12,7 +12,7 @@ const DesktopSubMenu = ({ menuName }: { menuName: string }) => {
               key={menuName}
               className="relative group/subMenu hover:bg-default duration-300"
             >
-              <a href="#" className="p-[15px_25px] block ">
+              <a href="#" className="p-[10px_25px] block ">
                 {menuName}
               </a>
               {newMenu.includes(menuName) && (

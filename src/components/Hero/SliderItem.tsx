@@ -1,11 +1,14 @@
-import { SliderItemProps } from "./definitions";
+import Featured from "./Featured";
+import { CarouselItemType } from "./definitions";
 
-const SliderItem = ({ heroImg }: SliderItemProps) => {
+const SliderItem = ({ data }: { data: CarouselItemType }) => {
   return (
     <div
-      style={{ backgroundImage: `url(${heroImg})` }}
+      style={{ backgroundImage: `url(${data.backdrop})` }}
       className={`h-[400px] md:h-[500px] lg:h-[70vh] xl:h-[800px] bg-cover bg-center bg-no-repeat`}
-    ></div>
+    >
+      <Featured data={data} />
+    </div>
   );
 };
 

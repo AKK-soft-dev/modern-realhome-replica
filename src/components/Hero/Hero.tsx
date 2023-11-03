@@ -1,8 +1,8 @@
 import Slider from "react-slick";
-import { heroImgData } from "../../lib/data";
+import { heroCarouselItems } from "../../lib/data";
 import SliderItem from "./SliderItem";
 import { useRef } from "react";
-
+import ContactForm from "./ContactForm";
 const settings = {
   dots: false,
   arrows: false,
@@ -19,11 +19,11 @@ const settings = {
 const Hero = () => {
   const sliderRef = useRef<Slider>(null);
   return (
-    <section className="mb-10 group overflow-x-hidden -z-10">
+    <section className="relative group overflow-x-hidden ">
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
-          {heroImgData.map((heroImg, i) => (
-            <SliderItem key={i} heroImg={heroImg} />
+          {heroCarouselItems.map((item, i) => (
+            <SliderItem key={i} data={item} />
           ))}
         </Slider>
         <div className="absolute top-1/2 -translate-y-1/2 left-5 right-7 flex justify-between">
@@ -57,6 +57,8 @@ const Hero = () => {
           </button>
         </div>
       </div>
+
+      <ContactForm />
     </section>
   );
 };

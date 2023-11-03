@@ -9,12 +9,24 @@
     font-family: "Rubik", sans-serif;
     font-size: 16px;
   }
-  body::-webkit-scrollbar {
-    width: 0px; /* Width of the scrollbar track */
-  }
-  body {
-    scrollbar-width: 0px;
-  }
+
+  /* body::-webkit-scrollbar {
+    width: 0px;
+    @apply bg-transparent w-0;
+  } */
+
+  /* body::-webkit-scrollbar- {
+    @apply bg-transparent absolute top-0 right-0;
+  } */
+
+  /* body::-webkit-scrollbar-thumb {
+    @apply bg-black/50 w-4 h-4;
+  } */
+
+  /* body {
+  scrollbar-width: 0px;
+} */
+
   body {
     @apply bg-default;
   }
@@ -24,11 +36,28 @@
   .btn {
     padding: 15px 20px;
   }
-  .container {
-    @apply px-2 sm:px-0;
+  .custom-container {
+    @apply px-2 sm:px-3 md:px-4 xl:px-16 2xl:px-32;
+  }
+  .no-container {
+    @apply px-0;
   }
 }
 
 .section-shape {
   clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
+}
+
+.no-spin-buttons::-webkit-inner-spin-button,
+.no-spin-buttons::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact-icon {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.featured-batch {
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
 }

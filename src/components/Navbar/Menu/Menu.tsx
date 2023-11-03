@@ -79,7 +79,7 @@ const Menu = () => {
             <div className="relative">
               <a
                 href="#"
-                className="block relative px-[25px] py-[15px] cursor-pointer capitalize duration-300 hover:text-secondary"
+                className="block relative px-[25px] py-[10px] cursor-pointer capitalize duration-300 hover:text-secondary"
               >
                 {menuName}
               </a>
@@ -88,15 +88,21 @@ const Menu = () => {
                   onClick={() => toggleExpand(menuName)}
                   className="absolute top-0 right-0 bottom-0 flex items-center justify-center p-3 text-black/60"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
+                  <span
+                    className={
+                      expandedMenuList.has(menuName) ? "rotate-180" : "rotate-0"
+                    }
                   >
-                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,48,88H208a8,8,0,0,1,5.66,13.66Z"></path>
-                  </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="15"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,48,88H208a8,8,0,0,1,5.66,13.66Z"></path>
+                    </svg>
+                  </span>
                 </button>
               )}
             </div>
