@@ -6,8 +6,8 @@ const Featured = ({
   data: CarouselItemType;
 }) => {
   return (
-    <div className="xl:hidden w-[90%] sm:w-[80%] md:w-[450px] absolute bottom-7 md:bottom-12 lg:bottom-0  lg:-translate-y-1/2 right-1/2 translate-x-1/2 md:translate-x-0 md:right-16  p-7 bg-paper">
-      <h2 className="text-xl font-bold">{title}</h2>
+    <div className="xl:hidden w-[270px] sm:w-[80%] md:w-[450px] absolute bottom-7 md:bottom-12 lg:bottom-0  lg:-translate-y-1/2 right-1/2 translate-x-1/2 md:translate-x-0 md:right-16 p-5 md:p-7 bg-paper">
+      <h2 className="text-lg sm:text-xl font-bold text-primary">{title}</h2>
       <p className="hidden lg:block text-black/70 text-sm mt-4">
         {description}
       </p>
@@ -63,9 +63,9 @@ const Featured = ({
           </div>
         </div>
       </div>
-      <div className="mt-4 text-sm text-black/70 font-medium">
+      <div className="mt-3 sm:mt-4 text-sm text-black/70 font-medium">
         <h6>{status}</h6>
-        <p className="text-xl text-primary">
+        <p className="text-lg sm:text-xl text-primary">
           ${price.toLocaleString()} {status === "For Rent" && "Monthly"}
         </p>
       </div>

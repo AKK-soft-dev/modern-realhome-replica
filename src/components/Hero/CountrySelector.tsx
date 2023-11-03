@@ -36,7 +36,7 @@ const CountrySelector = () => {
   return (
     <div
       ref={dropdownRef}
-      className="w-12 h-full flex items-stretch bg-slate-200"
+      className="w-12 h-[42px] flex items-stretch bg-slate-200"
     >
       <button
         type="button"

@@ -72,7 +72,7 @@ const Menu = () => {
           open
             ? "translate-y-3 opacity-100 pointer-events-auto"
             : "opacity-0 -translate-y-5 pointer-events-none"
-        }  duration-300`}
+        }  duration-300 shadow`}
       >
         {mainMenu.map((menuName) => (
           <li key={menuName} className="relative">
