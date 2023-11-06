@@ -44,6 +44,10 @@
   }
 }
 
+.ribbon-shape {
+  clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+}
+
 .section-shape {
   clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
 }

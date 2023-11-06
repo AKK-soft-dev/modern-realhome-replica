@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Search from "./components/Search/Search";
+import RecentProperties from "./components/RecentProperties/RecentProperties";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Search />
+      <RecentProperties />
     </>
   );
 };

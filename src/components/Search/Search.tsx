@@ -7,7 +7,7 @@ const Search = () => {
     setExpand((prev) => !prev);
   };
   return (
-    <section className="w-full bg-default mb-[500px]">
+    <section className="w-full bg-default relative z-20">
       <div className="xl:w-[85%] min-h-[90px] xl:-translate-y-[50%] mx-auto bg-paper flex flex-col xl:flex-row items-stretch xl:shadow border-t-2 xl:border-b-2 xl:border-none">
         <div className="xl:flex-1 flex flex-col md:flex-row flex-wrap items-stretch divide-x-2 divide-y-2 md:divide-y-0">
           <div className="flex-[2] flex flex-col sm:flex-row divide-x-2 divide-y-2 sm:divide-y-0">
@@ -68,7 +68,9 @@ const Search = () => {
         {/** Dropdown */}
         <div
           className={`xl:absolute overflow-hidden top-full left-0 xl:w-[calc(100%-250px)] bg-paper xl:shadow xl:z-10 duration-500 ${
-            expand ? "h-[820px] sm:h-[500px] md:h-[315px] border-t-2" : "h-0"
+            expand
+              ? "h-[820px] sm:h-[500px] md:h-[315px] border-t-2"
+              : "h-0 pointer-events-none"
           }`}
         >
           <div className="min-h-[270px] flex flex-col divide-y-2">
