@@ -7,6 +7,7 @@ import RecentProperties from "./components/RecentProperties/RecentProperties";
 import FeaturedProperties from "./components/FeaturedProperties/FeaturedProperites";
 import ForSaleProperties from "./components/ForSaleProperties/ForSaleProperties";
 import ForRentProperties from "./components/ForRentProperties/ForRentProperites";
+import BuyOrSell from "./components/BuyOrSell/BuyOrSell";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <FeaturedProperties />
       <ForSaleProperties />
       <ForRentProperties />
+      <BuyOrSell />
     </>
   );
 };
