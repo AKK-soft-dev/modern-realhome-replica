@@ -19,15 +19,27 @@ const ForRentPropertyItem = ({
 }) => {
   return (
     <div className="relative z-[5] flex flex-col w-full">
-      <div className="relative text-white">
-        <a href="#" className="">
-          <img src={backdrop} alt="" className="w-full height-auto" />
-        </a>
-        <div className="absolute bottom-2 left-0 w-full px-7 py-2 flex justify-between items-center">
-          {trendy && (
-            <span className="text-sm px-2 py-[2px] bg-green-600">Trendy</span>
-          )}
-          <div className="flex gap-1 text-white ml-auto">
+      <div className="relative">
+        <div className="relative text-white group/top">
+          <a href="#" className="">
+            <img src={backdrop} alt="" className="w-full height-auto" />
+          </a>
+          <div className="absolute inset-0 group-hover/top:opacity-100 opacity-0 duration-300 bg-primary/60 flex justify-center items-center">
+            <a
+              href="#"
+              className="border-2 border-white px-4 py-3 translate-y-[400%] group-hover/top:translate-y-0 duration-[400ms] hover:bg-white hover:text-primary-dark"
+            >
+              View Property
+            </a>
+          </div>
+          <div className="absolute bottom-2 left-0 w-full px-7 py-2 flex justify-between items-center">
+            {trendy && (
+              <span className="text-sm px-2 py-[2px] bg-green-600">Trendy</span>
+            )}
+          </div>
+        </div>
+        <div className="absolute bottom-2 right-7 inline">
+          <div className="flex gap-1 relative z-10 text-white ml-auto">
             <div className="relative group/tooltip hover:text-red-500">
               <Tooltip
                 title="ADD TO FAVORITE"

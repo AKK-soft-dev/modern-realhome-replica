@@ -19,7 +19,7 @@ const Tooltip = ({
 }: TooltipProps) => {
   return (
     <div
-      className={`absolute opacity-0 group-hover/tooltip:opacity-100 duration-150 left-1/2 -translate-x-1/2 px-4 py-1 ${bgColor} ${color} ${top} ${shadow} ${
+      className={`absolute text-sm z-50 opacity-0 group-hover/tooltip:opacity-100 duration-150 left-1/2 -translate-x-1/2 px-4 py-1 ${bgColor} ${color} ${top} ${shadow} ${
         shadow ? "shadow-xl" : "shadow-none"
       } ${
         animate
