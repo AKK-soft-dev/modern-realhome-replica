@@ -3,7 +3,7 @@ import Separator from "../utils/Separators/Separators";
 const BuyOrSell = () => {
   return (
     <section
-      className="h-[400px] md:h-[600px] lg:h-screen relative bg-fixed bg-cover text-center text-white flex items-center justify-center"
+      className="h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] relative bg-fixed bg-cover text-center text-white flex items-center justify-center"
       style={{ backgroundImage: "url(/cta-bg.jpg)" }}
     >
       <div className="w-[85%] md:w-[70%] 2xl:w-[50%] flex flex-col items-center justify-center gap-7">
@@ -31,7 +31,7 @@ const BuyOrSell = () => {
         </div>
       </div>
 
-      <div className="absolute top-0 left-0 right-0 w-full flex items-start">
+      <div className="absolute top-0 left-0 right-0 w-full">
         <Separator type="bottom" />
       </div>
       <div className="absolute bottom-0 left-0 right-0">

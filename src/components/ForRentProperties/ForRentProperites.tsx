@@ -54,7 +54,7 @@ const ForRentProperties = () => {
               {itemsToShow.map((property) => (
                 <div
                   key={property.id}
-                  className={`md:[&:nth-child(3)]:col-span-2 md:[&:nth-child(3)]:justify-self-center md:[&:nth-child(3)]:w-[calc(50%-14px)] lg:[&:nth-child(3)]:w-full lg:[&:nth-child(3)]:col-span-1 relative ${
+                  className={`-z-1 md:[&:nth-child(3)]:col-span-2 md:[&:nth-child(3)]:justify-self-center md:[&:nth-child(3)]:w-[calc(50%-14px)] lg:[&:nth-child(3)]:w-full lg:[&:nth-child(3)]:col-span-1 relative ${
                     currentPage === totalPages && itemsToShow.length === 1
                       ? "md:col-span-3 md:justify-self-center md:w-[calc(50%-14px)] lg:w-[calc(33.3333%-18.65px)]"
                       : ""
