@@ -2,7 +2,7 @@ import CountrySelector from "./CountrySelector";
 
 const ContactForm = () => {
   return (
-    <div className="xl:w-[450px] group/contact xl:absolute xl:top-[30%] xl:right-[7.5%] min-h-[200px] p-7 bg-paper w-full">
+    <div className="xl:w-[450px] group/contact relative min-h-[200px] p-7 bg-paper w-full">
       <form>
         <h2 className="text-2xl font-bold">Let Us Call You!</h2>
         <p className="text-black/70 text-sm">

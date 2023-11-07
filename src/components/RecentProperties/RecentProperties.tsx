@@ -28,7 +28,7 @@ const RecentProperties = () => {
 
   const itemsToShow = recentProperties.slice(startIndex, endIndex);
   return (
-    <section className="relative z-10 xl:custom-container bg-default mt-7 xl:mt-0 h-[500vh]">
+    <section className="relative z-10 xl:custom-container bg-default mt-7 xl:mt-0 mb-7">
       <h1 className="text-center text-primary-dark font-medium">Recent</h1>
       <h2 className="text-center text-3xl">Properties</h2>
       <p className="text-center text-black/60 mt-2 mb-7">

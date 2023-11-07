@@ -4,7 +4,7 @@ import Menu from "./Menu/Menu";
 const Navbar = () => {
   return (
     <header className="absolute top-0 left-0 w-full bg-gradient-to-b py-2 md:py-4 from-black/60 z-50">
-      <nav className="custom-container flex flex-col  md:flex-row items-center">
+      <nav className="custom-container px-2 md:px-3 xl:px-0 flex flex-col  md:flex-row items-center">
         <img src="/white-logo.png" alt="Logo" className="w-[119px] h-[62px]" />
         {/** For Desktop View */}
         <DesktopMenu />

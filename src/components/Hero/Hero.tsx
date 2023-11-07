@@ -58,7 +58,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <ContactForm />
+      <div className="xl:absolute xl:bottom-[10%] left-0 right-10 2xl:right-0 flex justify-end custom-container">
+        <ContactForm />
+      </div>
     </section>
   );
 };

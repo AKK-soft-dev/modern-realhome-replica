@@ -1,6 +1,7 @@
 import {
   CarouselItemType,
   CountryType,
+  FeaturedPropertyType,
   RecentPropertyType,
 } from "../components/Hero/definitions";
 
@@ -694,5 +695,44 @@ export const recentProperties: RecentPropertyType[] = [
       type: "James Estate Agents",
       photo: "/agents/agent-female-00.jpg",
     },
+  },
+];
+
+export const featuredProperties: FeaturedPropertyType[] = [
+  {
+    id: 1,
+    backdrop: "/properties/exterior-05-488x326.jpg",
+    title: "Home in Merrick Way",
+    description:
+      "Enchanting three bedroom, three bath home with spacious one bedroom, one bath cabana, in-laws quarters. Charming living area features fireplace…",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: 4300,
+    status: "For Sale",
+    price: 54000,
+  },
+  {
+    id: 2,
+    backdrop: "/properties/exterior-04-488x326.jpg",
+    title: "Villa in Coral Gables",
+    description:
+      "Spacious and fabulous home in a prime location. This executive style four bed, four bath home has impact-resistant windows, renovated…",
+    bedrooms: 3,
+    bathrooms: 3.5,
+    area: 3500,
+    status: "For Sale",
+    price: 825000,
+  },
+  {
+    id: 3,
+    backdrop: "/properties/bunglow-01-488x326.jpg",
+    title: "Villa on Grand Avenue",
+    description:
+      "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef’s kitchen opening to…",
+    bedrooms: 4,
+    bathrooms: 4,
+    area: 9300,
+    status: "For Rent",
+    price: 4750,
   },
 ];

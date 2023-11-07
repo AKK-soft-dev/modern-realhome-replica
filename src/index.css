@@ -37,8 +37,10 @@
     padding: 15px 20px;
   }
   .custom-container {
-    @apply px-2 sm:px-3 md:px-4 xl:px-16 2xl:px-32;
+    /* @apply px-2 sm:px-3 md:px-4 xl:px-16 2xl:px-32; */
+    @apply xl:w-[1200px] mx-auto;
   }
+
   .no-container {
     @apply px-0;
   }
@@ -48,8 +50,8 @@
   clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
 }
 
-.section-shape {
-  clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
+.separator-shape {
+  clip-path: polygon(0% 100%, 100% 0, 100% 100%);
 }
 
 .no-spin-buttons::-webkit-inner-spin-button,

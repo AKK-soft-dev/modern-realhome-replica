@@ -21,6 +21,7 @@ export interface CountryType {
 }
 
 export interface PropertyType {
+  id: number;
   backdrop: string;
   title: string;
   bedrooms?: number;
@@ -37,7 +38,6 @@ export interface FeaturedPropertyType extends PropertyType {
 export type ForRentPropertyType = FeaturedPropertyType;
 
 export interface RecentPropertyType extends PropertyType {
-  id: number;
   featured: boolean;
   hot: boolean;
   photos: number;

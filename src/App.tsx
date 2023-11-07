@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Search from "./components/Search/Search";
 import RecentProperties from "./components/RecentProperties/RecentProperties";
+import FeaturedProperties from "./components/FeaturedProperties/FeaturedProperites";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Hero />
       <Search />
       <RecentProperties />
+      <FeaturedProperties />
     </>
   );
 };

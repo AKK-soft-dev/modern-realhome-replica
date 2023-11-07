@@ -6,7 +6,7 @@ const Featured = ({
   data: CarouselItemType;
 }) => {
   return (
-    <div className="xl:hidden w-[270px] sm:w-[80%] md:w-[450px] absolute bottom-7 md:bottom-12 lg:bottom-0  lg:-translate-y-1/2 right-1/2 translate-x-1/2 md:translate-x-0 md:right-16 p-5 md:p-7 bg-paper">
+    <div className="xl:hidden w-[270px] sm:w-[80%] md:w-[450px] absolute bottom-[10%] lg:bottom-[5%] right-1/2 translate-x-1/2 md:translate-x-0 md:right-16 p-5 md:p-7 bg-paper">
       <h2 className="text-lg sm:text-xl font-bold text-primary">{title}</h2>
       <p className="hidden lg:block text-black/70 text-sm mt-4">
         {description}

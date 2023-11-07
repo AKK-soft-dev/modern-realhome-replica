@@ -7,8 +7,8 @@ const Search = () => {
     setExpand((prev) => !prev);
   };
   return (
-    <section className="w-full bg-default relative z-20">
-      <div className="xl:w-[85%] min-h-[90px] xl:-translate-y-[50%] mx-auto bg-paper flex flex-col xl:flex-row items-stretch xl:shadow border-t-2 xl:border-b-2 xl:border-none">
+    <section className="w-full bg-default relative z-20 custom-container">
+      <div className="xl:w-[90%] 2xl:w-full min-h-[90px] xl:-translate-y-[50%] mx-auto bg-paper flex flex-col xl:flex-row items-stretch xl:shadow border-t-2 xl:border-b-2 xl:border-none">
         <div className="xl:flex-1 flex flex-col md:flex-row flex-wrap items-stretch divide-x-2 divide-y-2 md:divide-y-0">
           <div className="flex-[2] flex flex-col sm:flex-row divide-x-2 divide-y-2 sm:divide-y-0">
             <div className="flex-1 h-[90px] px-6 py-4 flex flex-col justify-between items-start">
