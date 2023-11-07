@@ -144,7 +144,7 @@ const FeaturedPropertyItem = ({
           </div>
         </div>
 
-        <div className="absolute left-0 bottom-full w-24 h-7 bg-secondary duration-300 group-hover/contact:bg-primary text-white featured-batch translate-y-4">
+        <div className="absolute left-0 bottom-full w-24 h-7 bg-secondary duration-300 group-hover/contact:bg-primary text-white featured-batch translate-y-1/2">
           <span className="w-[85%] h-full flex items-center justify-center text-sm">
             Featured
           </span>
