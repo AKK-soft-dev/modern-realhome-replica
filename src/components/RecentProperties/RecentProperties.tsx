@@ -59,9 +59,9 @@ const RecentProperties = () => {
           ))}
         </div>
         {loading && (
-          <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center">
+          <div className="absolute w-full bottom-0 left-0 right-0 flex justify-center items-center">
             <svg
-              className="animate-spin -ml-1 mr-3 h-5 w-5 text-primary"
+              className="animate-spin h-5 w-5 text-primary"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -84,7 +84,7 @@ const RecentProperties = () => {
         )}
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center items-center">
         <Pagination
           disabled={loading}
           currentPage={currentPage}
