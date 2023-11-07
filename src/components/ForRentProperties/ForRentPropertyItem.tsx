@@ -1,7 +1,7 @@
-import { FeaturedPropertyType } from "../Hero/definitions";
+import { ForRentPropertyType } from "../Hero/definitions";
 import Tooltip from "../utils/Tooltip/Tooltip";
 
-const FeaturedPropertyItem = ({
+const ForRentPropertyItem = ({
   data: {
     backdrop,
     title,
@@ -11,23 +11,69 @@ const FeaturedPropertyItem = ({
     area,
     status,
     price,
+    featured,
+    trendy,
   },
 }: {
-  data: FeaturedPropertyType;
+  data: ForRentPropertyType;
 }) => {
   return (
-    <div className="relative flex flex-col w-full">
+    <div className="relative z-[5] flex flex-col w-full">
       <div className="relative text-white">
         <a href="#" className="">
-          <img
-            src={backdrop}
-            alt=""
-            className="w-full max-h-[420px] aspect-video"
-          />
+          <img src={backdrop} alt="" className="w-full height-auto" />
         </a>
+        <div className="absolute bottom-2 left-0 w-full px-7 py-2 flex justify-between items-center">
+          {trendy && (
+            <span className="text-sm px-2 py-[2px] bg-green-600">Trendy</span>
+          )}
+          <div className="flex gap-1 text-white ml-auto">
+            <div className="relative group/tooltip hover:text-red-500">
+              <Tooltip
+                title="ADD TO FAVORITE"
+                bgColor="bg-orange-600"
+                tooltipArrowColor="border-orange-600"
+                shadow
+                animate
+              />
+              <button className="relative h-full flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div className="relative group/tooltip hover:text-orange-600 ">
+              <Tooltip
+                title="ADD TO COMPARE"
+                bgColor="bg-orange-600"
+                tooltipArrowColor="border-orange-600"
+                shadow
+                animate
+              />
+              <button className="h-full flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path d="M42.34,85.66a8,8,0,0,1,0-11.32l32-32A8,8,0,0,1,88,48V72H208a8,8,0,0,1,0,16H88v24a8,8,0,0,1-13.66,5.66Zm171.32,84.68-32-32A8,8,0,0,0,168,144v24H48a8,8,0,0,0,0,16H168v24a8,8,0,0,0,13.66,5.66l32-32A8,8,0,0,0,213.66,170.34Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="relative py-8 px-7 -mt-16 bg-paper w-[95%] md:w-[80%] mx-auto shadow-md">
+      <div className="relative py-8 px-7 bg-paper shadow-md">
         <h3 className="text-2xl font-medium">{title}</h3>
         <p className="text-black/60 flex items-center mt-3">{description}</p>
 
@@ -90,68 +136,24 @@ const FeaturedPropertyItem = ({
           </div>
         </div>
 
-        <div className="flex justify-between mt-5">
+        <div className="mt-5">
           <div className="font-medium">
             <h6 className="text-sm">{status}</h6>
             <p className="text-2xl sm:text-xl text-primary">
               ${price.toLocaleString()} {status === "For Rent" && "Monthly"}
             </p>
           </div>
-          <div className="flex gap-2 text-black/30">
-            <div className="relative group/tooltip hover:text-red-500">
-              <Tooltip
-                title="ADD TO FAVORITE"
-                bgColor="bg-orange-600"
-                top="-top-[20px]"
-                tooltipArrowColor="border-orange-600"
-                shadow
-                animate
-              />
-              <button className="relative h-full flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                  viewBox="0 0 256 256"
-                >
-                  <path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path>
-                </svg>
-              </button>
-            </div>
-
-            <div className="relative group/tooltip hover:text-orange-600 ">
-              <Tooltip
-                title="ADD TO COMPARE"
-                top="-top-[20px]"
-                bgColor="bg-orange-600"
-                tooltipArrowColor="border-orange-600"
-                shadow
-                animate
-              />
-              <button className="h-full flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                  viewBox="0 0 256 256"
-                >
-                  <path d="M42.34,85.66a8,8,0,0,1,0-11.32l32-32A8,8,0,0,1,88,48V72H208a8,8,0,0,1,0,16H88v24a8,8,0,0,1-13.66,5.66Zm171.32,84.68-32-32A8,8,0,0,0,168,144v24H48a8,8,0,0,0,0,16H168v24a8,8,0,0,0,13.66,5.66l32-32A8,8,0,0,0,213.66,170.34Z"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
-
+      </div>
+      {featured && (
         <div className="absolute left-0 bottom-full w-24 h-7 bg-secondary duration-300 group-hover/contact:bg-primary text-white featured-batch translate-y-4">
           <span className="w-[85%] h-full flex items-center justify-center text-sm">
             Featured
           </span>
         </div>
-      </div>
+      )}
     </div>
   );
 };
 
-export default FeaturedPropertyItem;
+export default ForRentPropertyItem;

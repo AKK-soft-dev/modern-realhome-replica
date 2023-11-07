@@ -42,7 +42,7 @@ const RecentProperties = () => {
       >
         <div
           className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 duration-200 ${
-            loading ? "opacity-50" : "opacity-100"
+            loading ? "opacity-50 pointer-events-none" : "opacity-100"
           }`}
         >
           {itemsToShow.map((property) => (

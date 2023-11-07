@@ -20,8 +20,8 @@ const FeaturedProperties = () => {
   return (
     <>
       <Separator />
-      <section className="bg-paper">
-        <div className="relative z-10 xl:custom-container bg-paper pt-10 md:pt-0 xl:mt-0 mb-7">
+      <section className="bg-paper -mt-[1px]">
+        <div className="relative z-10 xl:custom-container bg-paper py-10 md:pt-0">
           <h1 className="text-center text-primary-dark font-medium">
             Check out
           </h1>
@@ -30,10 +30,10 @@ const FeaturedProperties = () => {
             View list of our short listed properties
           </p>
           {/* <FeaturedPropertyItem data={featuredProperties[0]} /> */}
-          <div className="relative lg:w-[650px] xl:w-[60%]  mx-auto">
+          <div className="relative lg:w-[650px] xl:w-[60%] mx-auto">
             <Slider ref={sliderRef} {...settings}>
               {featuredProperties.map((property) => (
-                <div key={property.id} className="relative z-[5] px-2">
+                <div key={property.id} className="relative z-[5] px-2 pb-2">
                   <FeaturedPropertyItem data={property} />
                 </div>
               ))}

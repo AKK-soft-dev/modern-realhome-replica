@@ -35,7 +35,10 @@ export interface FeaturedPropertyType extends PropertyType {
   description: string;
 }
 
-export type ForRentPropertyType = FeaturedPropertyType;
+export interface ForRentPropertyType extends FeaturedPropertyType {
+  featured: boolean;
+  trendy: boolean;
+}
 
 export interface RecentPropertyType extends PropertyType {
   featured: boolean;
@@ -51,4 +54,6 @@ export interface RecentPropertyType extends PropertyType {
   };
 }
 
-export type ForSalePropertyType = RecentPropertyType;
+export interface ForSalePropertyType extends RecentPropertyType {
+  type: string;
+}
