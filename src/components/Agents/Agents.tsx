@@ -9,7 +9,7 @@ const Agents = () => {
         <p className="text-center text-black/60 mt-2 mb-7">
           Get in touch with our real estate experts.
         </p>
-        <div className={`relative duration-300 pb-10 `}>
+        <div className={`relative duration-300`}>
           <div
             className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 lg:gap-7 duration-200`}
           >
