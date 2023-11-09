@@ -1,4 +1,4 @@
-import { RecentPropertyType } from "../Hero/definitions";
+import { RecentPropertyType } from "../../lib/definitions";
 import Tooltip from "../utils/Tooltip/Tooltip";
 
 const RecentPropertyItem = ({

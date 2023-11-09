@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { countries } from "../../lib/data";
 import clsx from "clsx";
-import { CountryType } from "./definitions";
+import { CountryType } from "../../lib/definitions";
 
 const CountrySelector = () => {
   const [selectedCountry, setSelectedCountry] = useState<CountryType>(

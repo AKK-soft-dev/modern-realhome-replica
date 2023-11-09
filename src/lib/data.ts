@@ -1,11 +1,12 @@
 import {
+  AgentType,
   CarouselItemType,
   CountryType,
   FeaturedPropertyType,
   ForRentPropertyType,
   ForSalePropertyType,
   RecentPropertyType,
-} from "../components/Hero/definitions";
+} from "./definitions";
 
 // export const heroImgData = [
 //   "/hero/slide-one.jpg",
@@ -899,5 +900,40 @@ export const featuredProperties: FeaturedPropertyType[] = [
     area: 9300,
     status: "For Rent",
     price: 4750,
+  },
+];
+
+export const agents: AgentType[] = [
+  {
+    id: 1,
+    name: "Nathan James",
+    photo: "/agents/agent-3.jpg",
+    phone: "1-234-456-7893",
+    email: "nathan@realhomes.io",
+    listedPropertiesCount: 3,
+  },
+  {
+    id: 2,
+    name: "Melissa William",
+    photo: "/agents/agent-female-00.jpg",
+    phone: "1-234-456-7892",
+    email: "melissa@realhomes.io",
+    listedPropertiesCount: 5,
+  },
+  {
+    id: 3,
+    name: "Alice Brian",
+    photo: "/agents/agent-4.jpg",
+    phone: "1-234-456-7891",
+    email: "alice@realhomes.io",
+    listedPropertiesCount: 5,
+  },
+  {
+    id: 4,
+    name: "John David",
+    photo: "/agents/agent-male-00.jpg",
+    phone: "1-234-456-7890",
+    email: "john@realhomes.io",
+    listedPropertiesCount: 6,
   },
 ];

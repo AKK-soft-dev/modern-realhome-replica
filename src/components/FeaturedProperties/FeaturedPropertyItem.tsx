@@ -1,4 +1,4 @@
-import { FeaturedPropertyType } from "../Hero/definitions";
+import { FeaturedPropertyType } from "../../lib/definitions";
 import Tooltip from "../utils/Tooltip/Tooltip";
 
 const FeaturedPropertyItem = ({

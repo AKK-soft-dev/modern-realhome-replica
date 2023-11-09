@@ -35,7 +35,7 @@ const BuyOrSell = () => {
         <Separator type="bottom" />
       </div>
       <div className="absolute bottom-0 left-0 right-0">
-        <Separator />
+        <Separator bgColor="bg-default" />
       </div>
     </section>
   );

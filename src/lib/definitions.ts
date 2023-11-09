@@ -57,3 +57,12 @@ export interface RecentPropertyType extends PropertyType {
 export interface ForSalePropertyType extends RecentPropertyType {
   type: string;
 }
+
+export interface AgentType {
+  id: number;
+  name: string;
+  photo: string;
+  email: string;
+  phone: string;
+  listedPropertiesCount: number;
+}

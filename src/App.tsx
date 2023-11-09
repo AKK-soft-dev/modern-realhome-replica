@@ -8,6 +8,7 @@ import FeaturedProperties from "./components/FeaturedProperties/FeaturedProperit
 import ForSaleProperties from "./components/ForSaleProperties/ForSaleProperties";
 import ForRentProperties from "./components/ForRentProperties/ForRentProperites";
 import BuyOrSell from "./components/BuyOrSell/BuyOrSell";
+import Agents from "./components/Agents/Agents";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <ForSaleProperties />
       <ForRentProperties />
       <BuyOrSell />
+      <Agents />
     </>
   );
 };

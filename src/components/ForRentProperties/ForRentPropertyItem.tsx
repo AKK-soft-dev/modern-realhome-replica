@@ -1,4 +1,4 @@
-import { ForRentPropertyType } from "../Hero/definitions";
+import { ForRentPropertyType } from "../../lib/definitions";
 import Tooltip from "../utils/Tooltip/Tooltip";
 
 const ForRentPropertyItem = ({

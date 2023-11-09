@@ -1,5 +1,5 @@
 import Featured from "./Featured";
-import { CarouselItemType } from "./definitions";
+import { CarouselItemType } from "../../lib/definitions";
 
 const SliderItem = ({ data }: { data: CarouselItemType }) => {
   return (

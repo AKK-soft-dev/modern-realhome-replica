@@ -1,4 +1,4 @@
-import { CarouselItemType } from "./definitions";
+import { CarouselItemType } from "../../lib/definitions";
 
 const Featured = ({
   data: { title, description, bedrooms, bathrooms, area, status, price },

@@ -1,4 +1,4 @@
-import { ForSalePropertyType } from "../Hero/definitions";
+import { ForSalePropertyType } from "../../lib/definitions";
 import Tooltip from "../utils/Tooltip/Tooltip";
 
 const ForSalePropertyItem = ({
