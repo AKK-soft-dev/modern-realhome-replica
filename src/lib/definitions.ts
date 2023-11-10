@@ -66,3 +66,13 @@ export interface AgentType {
   phone: string;
   listedPropertiesCount: number;
 }
+
+export interface NewsAndUpdateType {
+  id: number;
+  photo: string;
+  date: string;
+  category: string;
+  title: string;
+  description: string;
+  author: string;
+}

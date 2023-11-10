@@ -5,6 +5,7 @@ import {
   FeaturedPropertyType,
   ForRentPropertyType,
   ForSalePropertyType,
+  NewsAndUpdateType,
   RecentPropertyType,
 } from "./definitions";
 
@@ -935,5 +936,38 @@ export const agents: AgentType[] = [
     phone: "1-234-456-7890",
     email: "john@realhomes.io",
     listedPropertiesCount: 6,
+  },
+];
+
+export const newsAndUpdates: NewsAndUpdateType[] = [
+  {
+    id: 1,
+    photo: "/news/gallery-00-488x326.jpg",
+    date: "July 13, 2015",
+    category: "Luxury",
+    title: "Gallery Post Format",
+    description:
+      "Competently harness enterprise vortals via revolutionary e-tailers. Monotonectally recaptiualize one-to-one relationships whereas…",
+    author: "John Doe",
+  },
+  {
+    id: 2,
+    photo: "/news/blog-post-00-488x326.jpg",
+    date: "July 13, 2015",
+    category: "Luxury",
+    title: "Image Post Format",
+    description:
+      "Enthusiastically disintermediate progressive innovation before high-payoff metrics. Intrinsicly generate sticky services without…",
+    author: "John Doe",
+  },
+  {
+    id: 3,
+    photo: "/news/guest-house-488x326.jpg",
+    date: "July 13, 2015",
+    category: "Market Trends",
+    title: "Video Post Format",
+    description:
+      "Uniquely customize future-proof niche markets via worldwide users. Proactively negotiate user-centric schemas…",
+    author: "John Doe",
   },
 ];

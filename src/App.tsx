@@ -10,6 +10,7 @@ import ForRentProperties from "./components/ForRentProperties/ForRentProperites"
 import BuyOrSell from "./components/BuyOrSell/BuyOrSell";
 import Agents from "./components/Agents/Agents";
 import Quote from "./components/Quote/Quote";
+import NewsAndUpdates from "./components/NewsAndUpdates/NewsAndUpdates";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <BuyOrSell />
       <Agents />
       <Quote />
+      <NewsAndUpdates />
     </>
   );
 };
