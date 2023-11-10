@@ -6,7 +6,7 @@ const AgentItem = ({
   data: AgentType;
 }) => {
   return (
-    <div className="relative w-[270px] sm:w-auto mx-auto flex flex-col group/agent pt-10">
+    <div className="relative w-[270px] md:w-auto mx-auto flex flex-col group/agent pt-10">
       <div className="bg-paper shadow">
         <img
           src={photo}
