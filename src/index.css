@@ -28,7 +28,7 @@
 } */
 
   body {
-    @apply bg-default;
+    @apply bg-default selection:bg-primary selection:text-white;
   }
 }
 

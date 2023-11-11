@@ -1,7 +1,7 @@
-import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar/Navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/Navbar";
 import Search from "./components/Search/Search";
 import RecentProperties from "./components/RecentProperties/RecentProperties";
 import FeaturedProperties from "./components/FeaturedProperties/FeaturedProperites";
@@ -14,6 +14,7 @@ import NewsAndUpdates from "./components/NewsAndUpdates/NewsAndUpdates";
 import AmazingFeatures from "./components/AmazingFeatures/AmazingFeatures";
 import GetInTouch from "./components/GetInTouch/GetInTouch";
 import Partners from "./components/Partners/Partners";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
       <AmazingFeatures />
       <GetInTouch />
       <Partners />
+      <Footer />
     </>
   );
 };
