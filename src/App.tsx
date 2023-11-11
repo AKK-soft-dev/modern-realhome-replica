@@ -13,6 +13,7 @@ import Quote from "./components/Quote/Quote";
 import NewsAndUpdates from "./components/NewsAndUpdates/NewsAndUpdates";
 import AmazingFeatures from "./components/AmazingFeatures/AmazingFeatures";
 import GetInTouch from "./components/GetInTouch/GetInTouch";
+import Partners from "./components/Partners/Partners";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
       <NewsAndUpdates />
       <AmazingFeatures />
       <GetInTouch />
+      <Partners />
     </>
   );
 };

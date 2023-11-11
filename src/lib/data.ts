@@ -1017,3 +1017,11 @@ export const amazingFeatures: AmazingFeatureType[] = [
       "Real Homes provides front end property submit template and related configurations. So you can restrict certain level of users from accessing administrator dashboard and provide them an interface on front end to submit properties.",
   },
 ];
+
+export const partners: string[] = [
+  "/partners/one.png",
+  "/partners/two.png",
+  "/partners/three.png",
+  "/partners/four.png",
+  "/partners/five.png",
+];
