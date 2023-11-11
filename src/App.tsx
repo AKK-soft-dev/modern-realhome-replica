@@ -12,6 +12,7 @@ import Agents from "./components/Agents/Agents";
 import Quote from "./components/Quote/Quote";
 import NewsAndUpdates from "./components/NewsAndUpdates/NewsAndUpdates";
 import AmazingFeatures from "./components/AmazingFeatures/AmazingFeatures";
+import GetInTouch from "./components/GetInTouch/GetInTouch";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       <Quote />
       <NewsAndUpdates />
       <AmazingFeatures />
+      <GetInTouch />
     </>
   );
 };
