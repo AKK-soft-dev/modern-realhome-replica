@@ -1,5 +1,6 @@
 import {
   AgentType,
+  AmazingFeatureType,
   CarouselItemType,
   CountryType,
   FeaturedPropertyType,
@@ -969,5 +970,50 @@ export const newsAndUpdates: NewsAndUpdateType[] = [
     description:
       "Uniquely customize future-proof niche markets via worldwide users. Proactively negotiate user-centric schemas…",
     author: "John Doe",
+  },
+];
+
+export const amazingFeatures: AmazingFeatureType[] = [
+  {
+    id: 1,
+    icon: "/amazing_features/icon-1.png",
+    title: "Live Customizer",
+    description:
+      "To help you configure and customize stuff around your website without going into code. You can customize the price format to any currency in the world. You can customize the URL slugs to your required ones.",
+  },
+  {
+    id: 2,
+    icon: "/amazing_features/icon-2.png",
+    title: "Design Variations",
+    description:
+      "Real Homes theme includes two major design variations. You can use the classic or modern look based on your choice.",
+  },
+  {
+    id: 3,
+    icon: "/amazing_features/icon-3.png",
+    title: "Advance Search",
+    description:
+      "Real Homes includes advanced properties search feature that is powerful and fully customizable to fulfill various needs. You can select which fields you want to display and what data will be displayed in those fields.",
+  },
+  {
+    id: 4,
+    icon: "/amazing_features/icon-4.png",
+    title: "Google & OpenStreet Maps",
+    description:
+      "Real Homes includes Google Maps API integration that enables you to display Google map with properties markers on search results page, properties display pages, property detail page, home page and taxonomy archive pages.",
+  },
+  {
+    id: 5,
+    icon: "/amazing_features/icon-5.png",
+    title: "Member Support",
+    description:
+      "You can provide user registration, login and forgot password features on your site to let users access member only features. Social login feature allow you to integrate any social network with your website for user login and registration.",
+  },
+  {
+    id: 6,
+    icon: "/amazing_features/icon-6.png",
+    title: "Front End Property Submit",
+    description:
+      "Real Homes provides front end property submit template and related configurations. So you can restrict certain level of users from accessing administrator dashboard and provide them an interface on front end to submit properties.",
   },
 ];

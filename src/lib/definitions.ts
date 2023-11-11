@@ -76,3 +76,10 @@ export interface NewsAndUpdateType {
   description: string;
   author: string;
 }
+
+export interface AmazingFeatureType {
+  id: number;
+  icon: string;
+  title: string;
+  description: string;
+}

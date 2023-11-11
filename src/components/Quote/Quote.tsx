@@ -6,7 +6,6 @@ const Quote = () => {
       <div className="absolute w-[100px] md:w-[150px] xl:w-[200px] -top-16 md:top-0 md:translate-y-1/3 left-2 md:left-12 z-10 text-primary-dark/90">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="inherit"
           height="141"
           fill="currentColor"
           viewBox="0 0 205 141"
@@ -19,7 +18,6 @@ const Quote = () => {
       <div className="absolute w-[100px] md:w-[150px] xl:w-[200px] -bottom-16 md:bottom-0 md:-translate-y-1/3 right-2 md:right-12 z-10 text-primary-dark/90 rotate-180">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="inherit"
           height="141"
           fill="currentColor"
           viewBox="0 0 205 141"
