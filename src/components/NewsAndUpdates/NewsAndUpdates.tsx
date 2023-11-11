@@ -4,7 +4,7 @@ import NewsAndUpdateItem from "./NewsAndUpdateItem";
 const NewsAndUpdates = () => {
   return (
     <>
-      <section className="relative custom-container bg-default pt-10 md:pt-0  px-54 sm:px-5 lg:px-0">
+      <section className="relative custom-container bg-default pt-10 md:pt-0 px-4 sm:px-5 lg:px-0">
         <h1 className="text-center text-primary-dark font-medium">
           Check out recent
         </h1>
