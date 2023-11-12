@@ -7,7 +7,7 @@ const Footer = () => {
         <Separator bgColor="bg-[#303030]" />
       </div>
       <footer className="bg-[#303030] px-5 lg:px-0">
-        <div className="custom-container py-12 lg:py-16">
+        <div className="custom-container pt-12 pb-16 md:pb-12 lg:pt-16 lg:pb-16">
           <div className="flex flex-col md:flex-row justify-between gap-5">
             <div className="flex flex-col gap-y-2 md:flex-row items-center">
               <img src="/white-logo.png" alt="Logo" />
