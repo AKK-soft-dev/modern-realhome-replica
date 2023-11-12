@@ -3,7 +3,7 @@ import Separator from "../utils/Separators/Separators";
 const GetInTouch = () => {
   return (
     <section
-      className="h-[300px] md:h-[500px] lg:h-[500px] xl:h-[600px] relative bg-fixed bg-cover text-center text-white flex items-center justify-center"
+      className="h-[350px] md:h-[500px] lg:h-[500px] xl:h-[600px] relative bg-fixed bg-cover text-center text-white flex items-center justify-center"
       style={{ backgroundImage: "url(/cta-above-footer.jpg)" }}
     >
       <div className="absolute inset-0 bg-primary/80"></div>
