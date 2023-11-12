@@ -39,34 +39,36 @@ const CurrencyDropdown = () => {
         !open ? "md:translate-x-[calc(100%-46px)] " : ""
       }`}
     >
-      <button
-        ref={dropdownRef}
-        onClick={toggle}
-        className={`flex relative items-center px-3 py-3 gap-3 ${
-          open ? "bg-white text-black" : "bg-black text-white"
-        }`}
-      >
-        <img
-          src={selectedCurrency.icon}
-          alt={`${selectedCurrency.code} icon`}
-          className="w-6 h-4"
-        />
-        <div className="relative">
-          <div className="space-x-1 flex items-center text-sm">
-            <span className="uppercase">{selectedCurrency.code}</span>
-            <span className="rotate-180 md:rotate-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                fill="currentColor"
-                viewBox="0 0 256 256"
-              >
-                <path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"></path>
-              </svg>
-            </span>
+      <div className="relative">
+        <button
+          ref={dropdownRef}
+          onClick={toggle}
+          className={`flex relative items-center px-3 py-3 gap-3 ${
+            open ? "bg-white text-black" : "bg-black text-white"
+          }`}
+        >
+          <img
+            src={selectedCurrency.icon}
+            alt={`${selectedCurrency.code} icon`}
+            className="w-6 h-4"
+          />
+          <div className="relative">
+            <div className="space-x-1 flex items-center text-sm">
+              <span className="uppercase">{selectedCurrency.code}</span>
+              <span className="rotate-180 md:rotate-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"></path>
+                </svg>
+              </span>
+            </div>
           </div>
-        </div>
+        </button>
         {open && (
           <ul className="absolute bottom-full md:top-full left-0 right-0 w-full bg-white text-black/60 text-sm font-medium">
             {currencies.map((currency) => {
@@ -89,7 +91,7 @@ const CurrencyDropdown = () => {
             })}
           </ul>
         )}
-      </button>
+      </div>
     </div>
   );
 };
