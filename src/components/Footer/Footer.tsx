@@ -6,12 +6,12 @@ const Footer = () => {
       <div className="hidden lg:block">
         <Separator bgColor="bg-[#303030]" />
       </div>
-      <footer className="bg-[#303030] px-3">
-        <div className="custom-container py-12 lg:py-15">
+      <footer className="bg-[#303030] px-5 lg:px-0">
+        <div className="custom-container py-12 lg:py-16">
           <div className="flex flex-col md:flex-row justify-between gap-5">
-            <div className="flex flex-col md:flex-row items-center">
+            <div className="flex flex-col gap-y-2 md:flex-row items-center">
               <img src="/white-logo.png" alt="Logo" />
-              <p className="text-sm text-white/60">
+              <p className="text-sm text-white/50">
                 <span className="hidden md:inline mx-3">/</span>
                 <span>Simply #1 Real Estate Theme</span>
               </p>
@@ -115,7 +115,7 @@ const Footer = () => {
           <div className="flex flex-wrap mt-10 gap-y-10">
             <div className="basis-[100%] sm:basis-1/2 lg:basis-1/3 space-y-3">
               <h2 className="font-medium text-white">Quick Links</h2>
-              <ul className="flex flex-wrap text-white/60 gap-y-3">
+              <ul className="flex flex-wrap flex-col min-[480px]:flex-row text-white/50 gap-y-3">
                 <li className="basis-1/2 flex items-center space-x-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -176,21 +176,45 @@ const Footer = () => {
             </div>
             <div className="basis-[100%] sm:basis-1/2 lg:basis-1/3 space-y-3">
               <h2 className="font-medium text-white">Contact Us</h2>
-              <ul className="text-white/60 space-y-6">
-                <li className="flex items-start">
-                  <span></span>
+              <ul className="text-white/50 space-y-6">
+                <li className="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"></path>
+                  </svg>
                   <p className="max-w-[60%]">
                     3015 Grand Ave, Coconut Grove, Merrick Way, FL 12345
                   </p>
                 </li>
-                <li className="flex items-start">
-                  <span></span>
+                <li className="flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"></path>
+                  </svg>
                   <a href="#" className="hover:text-white duration-200">
                     +123-456-789
                   </a>
                 </li>
-                <li className="flex items-start">
-                  <span></span>
+                <li className="flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-8,144H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path>
+                  </svg>
                   <a
                     href="mailto:sales@example.com"
                     className="hover:text-white duration-200"
@@ -215,7 +239,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-center text-white/60 mt-10">
+          <div className="flex flex-col min-[480px]:flex-row gap-y-2 justify-between items-center text-white/50 mt-14">
             <p>&copy; 2023. All rights reserved.</p>
             <p>
               Designed by{" "}
