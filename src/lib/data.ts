@@ -1025,3 +1025,31 @@ export const partners: string[] = [
   "/partners/four.png",
   "/partners/five.png",
 ];
+
+export const currencies = [
+  {
+    id: 1,
+    code: "usd",
+    icon: "/currency_flags/usd.svg",
+  },
+  {
+    id: 2,
+    code: "eur",
+    icon: "/currency_flags/eur.svg",
+  },
+  {
+    id: 3,
+    code: "gbp",
+    icon: "/currency_flags/gbp.svg",
+  },
+  {
+    id: 4,
+    code: "jpy",
+    icon: "/currency_flags/jpy.svg",
+  },
+  {
+    id: 5,
+    code: "aud",
+    icon: "/currency_flags/aud.svg",
+  },
+];

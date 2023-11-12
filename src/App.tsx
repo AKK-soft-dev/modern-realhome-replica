@@ -15,6 +15,8 @@ import AmazingFeatures from "./components/AmazingFeatures/AmazingFeatures";
 import GetInTouch from "./components/GetInTouch/GetInTouch";
 import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
+import ScrollToTopButton from "./components/utils/ScrollToTopButton/ScrollToTopButton";
+import CurrencyDropdown from "./components/utils/IntlDropdown/CurrencyDropdown";
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const App = () => {
       <GetInTouch />
       <Partners />
       <Footer />
+      <CurrencyDropdown />
+      <ScrollToTopButton />
     </>
   );
 };
